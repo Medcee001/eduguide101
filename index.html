@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduGuide - Learn Anything, Anytime</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="container header-container">
+      <h1 class="logo"><i class="fas fa-graduation-cap"></i> EduGuide</h1>
+      <div class="search-box">
+        <i class="fas fa-search"></i>
+        <input type="text" placeholder="Search courses...">
+      </div>
+      <div class="auth-buttons">
+        <button id="login-btn"><i class="fas fa-user"></i> Log In</button>
+        <button id="signup-btn"><i class="fas fa-user-plus"></i> Sign Up</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h2>Learn Anything, Anytime with EduGuide</h2>
+        <button class="cta-button" onclick="window.location.href='#all-courses'">
+          <i class="fas fa-book-open"></i> Explore Courses
+        </button>
+      </div>
+    </section>
+
+    <section class="trending-courses">
+  <h3><i class="fas fa-fire"></i> Trending Courses</h3>
+  <div class="courses-grid">
+    <div class="course-card">
+      <div class="course-image" style="background-image: url('https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80')"></div>
+      <div class="course-info">
+        <h4><i class="fab fa-html5"></i> Web Development</h4>
+        <p>Master HTML, CSS, and JavaScript to build modern websites.</p>
+        <button class="view-course" onclick="window.location.href='#all-courses'">
+          <i class="fas fa-book-open"></i> Explore
+        </button>
+      </div>
+    </div>
+    <div class="course-card">
+      <div class="course-image" style="background-image: url('https://images.unsplash.com/photo-1526379095098-d400fd0bf935?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80')"></div>
+      <div class="course-info">
+        <h4><i class="fas fa-database"></i> Data Science</h4>
+        <p>Learn Python, statistics, and machine learning fundamentals.</p>
+        <button class="view-course" onclick="window.location.href='#all-courses'">
+          <i class="fas fa-book-open"></i> Explore
+        </button>
+      </div>
+    </div>
+    <div class="course-card">
+      <div class="course-image" style="background-image: url('https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80')"></div>
+      <div class="course-info">
+        <h4><i class="fas fa-robot"></i> AI & ML</h4>
+        <p>Introduction to artificial intelligence and machine learning.</p>
+        <button class="view-course" onclick="window.location.href='#all-courses'">
+          <i class="fas fa-book-open"></i> Explore
+        </button>
+      </div>
+    </div>
+    <div class="course-card">
+      <div class="course-image" style="background-image: url('https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80')"></div>
+      <div class="course-info">
+        <h4><i class="fas fa-mobile-alt"></i> Mobile Dev</h4>
+        <p>Build apps for iOS and Android platforms.</p>
+        <button class="view-course" onclick="window.location.href='#all-courses'">
+          <i class="fas fa-book-open"></i> Explore
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section id="all-courses" class="all-courses">
+      <div class="courses-header">
+        <h3><i class="fas fa-book"></i> All Courses</h3>
+        <div class="filters">
+          <div class="filter-group">
+            <label for="category"><i class="fas fa-tags"></i> Category:</label>
+            <select id="category">
+              <option value="all">All Categories</option>
+              <option value="web">Web Development</option>
+              <option value="data">Data Science</option>
+              <option value="ai">Artificial Intelligence</option>
+              <option value="mobile">Mobile Development</option>
+              <option value="cloud">Cloud Computing</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label for="difficulty"><i class="fas fa-signal"></i> Difficulty:</label>
+            <select id="difficulty">
+              <option value="all">All Levels</option>
+              <option value="beginner">Beginner</option>
+              <option value="intermediate">Intermediate</option>
+              <option value="advanced">Advanced</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="courses-grid">
+        <!-- Courses will be loaded by JavaScript -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-links">
+      <a href="#"><i class="fas fa-info-circle"></i> About Us</a>
+      <a href="#"><i class="fas fa-envelope"></i> Contact</a>
+      <a href="#"><i class="fas fa-shield-alt"></i> Privacy Policy</a>
+      <a href="#"><i class="fas fa-file-contract"></i> Terms of Service</a>
+    </div>
+    <div class="copyright">
+      <i class="far fa-copyright"></i> 2024 EduGuide. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- Auth Modals -->
+  <!-- Login Modal -->
+<div id="login-modal" class="modal">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <h3><i class="fas fa-sign-in-alt"></i> Welcome back</h3>
+    <form id="login-form">
+      <div class="form-group">
+        <label><i class="fas fa-envelope"></i> Email</label>
+        <input type="email" id="login-email" required>
+      </div>
+      <div class="form-group">
+        <label><i class="fas fa-lock"></i> Password</label>
+        <input type="password" id="login-password" required>
+      </div>
+      <a href="#" class="forgot-password"><i class="fas fa-question-circle"></i> Forgot Password?</a>
+      <button type="submit" class="submit-btn"><i class="fas fa-sign-in-alt"></i> Login</button>
+    </form>
+    <p class="auth-footer">Don't have an account? <a href="#" id="switch-to-signup"><i class="fas fa-user-plus"></i> Sign up</a></p>
+  </div>
+</div>
+
+<!-- Signup Modal -->
+<div id="signup-modal" class="modal">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <h3><i class="fas fa-user-plus"></i> Sign up for EduGuide</h3>
+    <form id="signup-form">
+      <div class="form-group">
+        <label><i class="fas fa-user"></i> Name</label>
+        <input type="text" id="signup-name" required>
+      </div>
+      <div class="form-group">
+        <label><i class="fas fa-envelope"></i> Email</label>
+        <input type="email" id="signup-email" required>
+      </div>
+      <div class="form-group">
+        <label><i class="fas fa-lock"></i> Password</label>
+        <input type="password" id="signup-password" required>
+      </div>
+      <div class="form-group">
+        <label><i class="fas fa-lock"></i> Confirm Password</label>
+        <input type="password" id="signup-confirm" required>
+      </div>
+      <button type="submit" class="submit-btn"><i class="fas fa-user-plus"></i> Sign Up</button>
+    </form>
+    <p class="auth-footer">Already have an account? <a href="#" id="switch-to-login"><i class="fas fa-sign-in-alt"></i> Log in</a></p>
+  </div>
+</div>
+
+
+  <script src="scripts/app.js"></script>
+</body>
+</html>
